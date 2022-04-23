@@ -1,6 +1,6 @@
 public class SimpleLocation {
-  public double latitude;
-  public double longitude;
+  private double latitude;
+  private double longitude;
 
   public SimpleLocation(double lat, double lon) {
     this.latitude = lat;
@@ -10,6 +10,18 @@ public class SimpleLocation {
   public SimpleLocation() {
     this.latitude = 0.0;
     this.longitude = 0.0;
+  }
+
+  public double getLatitude() {
+    return this.latitude;
+  }
+
+  public void setLatitude(double lat) {
+    if (lat < -180 || lat > 180) {
+      System.out.println("Illegal value for latitude: " + lat);
+    } else {
+      this.latitude = lat;
+    }
   }
 
   public double distance(SimpleLocation other) {
