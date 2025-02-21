@@ -12,3 +12,5 @@
 # Java
 #------------------------
 *.class
+*/target/
+/oneDay/2_GettingReady/HelloWorld/target/
