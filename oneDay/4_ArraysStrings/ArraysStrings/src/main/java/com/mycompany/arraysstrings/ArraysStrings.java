@@ -1,5 +1,7 @@
 package com.mycompany.arraysstrings;
 
+import java.util.Arrays;
+
 /**
  *
  * @author damiansp
@@ -28,5 +30,11 @@ public class ArraysStrings {
         int[] userAges = {50, 48, 44, 42};
         int[] yob = new int[4];
         userAges[1]++;
+        int[] ua2 = {18, 16, 12, 10};
+        boolean eq = Arrays.equals(userAges, ua2);
+        System.out.println(eq);
+        int[] boys = Arrays.copyOfRange(userAges, 1, 3);
+        Arrays.sort(boys);
+        System.out.println(Arrays.toString(boys));
     }
 }
