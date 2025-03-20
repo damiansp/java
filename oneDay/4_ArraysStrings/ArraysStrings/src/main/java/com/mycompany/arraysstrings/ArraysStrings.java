@@ -29,12 +29,18 @@ public class ArraysStrings {
         /* Arrays */
         int[] userAges = {50, 48, 44, 42};
         int[] yob = new int[4];
-        userAges[1]++;
+        userAges[0]++;
         int[] ua2 = {18, 16, 12, 10};
         boolean eq = Arrays.equals(userAges, ua2);
         System.out.println(eq);
         int[] boys = Arrays.copyOfRange(userAges, 1, 3);
         Arrays.sort(boys);
         System.out.println(Arrays.toString(boys));
+        int myIdx = Arrays.binarySearch(boys, 48);
+        int noSuchIdx = Arrays.binarySearch(boys, 46);
+        System.out.println(myIdx);  // 1
+        System.out.println(noSuchIdx);  
+        int nSibs = userAges.length;
+        System.out.println(nSibs);
     }
 }
