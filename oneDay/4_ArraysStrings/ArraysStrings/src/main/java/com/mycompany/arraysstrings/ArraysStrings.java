@@ -1,6 +1,7 @@
 package com.mycompany.arraysstrings;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  *
@@ -42,5 +43,19 @@ public class ArraysStrings {
         System.out.println(noSuchIdx);  
         int nSibs = userAges.length;
         System.out.println(nSibs);
+        
+        System.out.printf("%.2f / %d = %.3f\n", 5.45, 3, 5.45 / 3);
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter an int: ");
+        int myInt = input.nextInt();
+        System.out.printf("Got: %d\n\n", myInt);
+        System.out.println("Enter an double: ");
+        double myDub = input.nextDouble();
+        System.out.printf("Got: %.3f\n\n", myDub);
+        System.out.println("Enter an string: ");
+        input.nextLine();
+        String myString = input.nextLine();
+        System.out.printf("Got: \"%s\"\n\n", myString);
     }
 }
