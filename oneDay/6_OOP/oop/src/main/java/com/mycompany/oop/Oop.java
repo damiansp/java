@@ -1,5 +1,7 @@
 package com.mycompany.oop;
 
+import java.util.Arrays;
+
 /**
  *
  * @author damiansp
@@ -22,6 +24,12 @@ public class Oop {
         sd.displayMessage();
         System.out.println(StaticDemo.greetings);
         StaticDemo.displayGreetings();
+        
+        ArrayMethods am = new ArrayMethods();
+        int[] myArray = {1, 2, 3, 4, 5};
+        am.printFirstElement(myArray);
+        int[] yourArray = am.returnArray();
+        System.out.println(Arrays.toString(yourArray));
     }
 }
 
