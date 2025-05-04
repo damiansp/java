@@ -30,6 +30,26 @@ public class Oop {
         am.printFirstElement(myArray);
         int[] yourArray = am.returnArray();
         System.out.println(Arrays.toString(yourArray));
+        
+        int n = 2;
+        System.out.println("n: " + n);
+        passPrimitive(n);
+        System.out.println("n: " + n);
+        
+        int[] ns = {0, 1, 2};
+        System.out.println("ns[0]: " + ns[0]);
+        passRef(ns);
+        System.out.println("ns[0]: " + ns[0]);
+    }
+    
+    public static void passPrimitive(int prim) {
+        prim++;
+        System.out.println("In method: " + prim);
+    }
+    
+    public static void passRef(int[] ref) {
+        ref[0]++;
+        System.out.println("In method: " + ref[0]);
     }
 }
 
